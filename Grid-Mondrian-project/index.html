@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      /* grid-template-rows: auto auto auto auto 20px; */
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .merah {
+      background-color: #E72F24;
+      /* grid-row: span 2; */
+      /* grid-template-columns: 320px;
+      border: solid black 5px; */
+    }
+    
+    .putih1 {
+      /* grid-row: span 2; */
+      grid-column: span 3;
+      /* grid-column: span 2;
+      background-color: #F0F1EC;
+      grid-template-columns: auto;
+      grid-template-rows: 414px;
+      border: solid black 5px; */
+    }
+
+    .putih2 {
+      grid-row: span 2;
+      /* grid-template-columns: 320px;
+      background-color: #F0F1EC;
+      border: solid black 5px; */
+    }
+
+    .putih3 {
+      grid-area: 2 / 2 / 4 /4
+      /* grid-row: span 2;
+      background-color: #F0F1EC;
+      grid-column: span 2; */
+      /* grid-template-columns: 251px;
+      grid-template-rows: 155px;
+      border: solid black 5px; */
+    }
+
+    .biru {
+      background-color: #004592;
+      border-bottom: solid black 10px;
+    }
+
+    .putih4 {
+      /* background-color: #F0F1EC; */
+      grid-row: span 2;
+    }
+
+    .hijau {
+      background-color: green;
+    }
+
+    .kuning {
+      background-color: yellow;
+      /* grid-auto-rows: 20px;
+      grid-auto-columns: 198px;
+      border: solid black 5px; */
+    }
+
+    .hitam {
+      background-color: #232629;
+      /* grid-auto-rows: 20px;
+      grid-auto-columns: 153px;
+      border: solid black 5px; */
+    }
+
+    
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+</body>
+  <div class="container">
+    <div class="item merah"></div>
+    <div class="item putih1"></div>
+    <div class="item putih2"></div>
+    <div class="item putih3"></div>
+    <div class="item biru"></div>
+    <div class="item putih4"></div>
+    <div class="item hijau"></div>
+    <div class="item kuning"></div>
+    <div class="item hitam"></div>
+  </div>
+</html>
